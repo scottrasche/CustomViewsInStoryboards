@@ -11,26 +11,30 @@
             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fbi" translatesAutoresizingMaskIntoConstraints="NO" id="eT4-0y-TFs">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="100"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="100" id="G7x-4f-UQK"/>
-                    </constraints>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smile!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MH-Lq-UdC">
-                    <rect key="frame" x="97" y="105" width="47" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hwI-UX-sYg">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fbi" translatesAutoresizingMaskIntoConstraints="NO" id="eT4-0y-TFs">
+                            <rect key="frame" x="5.5" y="0.0" width="229" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="G7x-4f-UQK"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We already know your name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MH-Lq-UdC">
+                            <rect key="frame" x="12.5" y="100" width="215" height="28"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="0MH-Lq-UdC" secondAttribute="bottom" constant="2" id="0LJ-E0-pcX"/>
-                <constraint firstAttribute="trailing" secondItem="eT4-0y-TFs" secondAttribute="trailing" id="459-YP-aBp"/>
-                <constraint firstItem="eT4-0y-TFs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XxN-O1-R2s"/>
-                <constraint firstItem="eT4-0y-TFs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fed-28-e7E"/>
-                <constraint firstItem="0MH-Lq-UdC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="p63-nP-776"/>
+                <constraint firstAttribute="trailing" secondItem="hwI-UX-sYg" secondAttribute="trailing" id="6G0-dS-e1i"/>
+                <constraint firstAttribute="bottom" secondItem="hwI-UX-sYg" secondAttribute="bottom" id="Jur-g0-b5F"/>
+                <constraint firstItem="hwI-UX-sYg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="s4Z-eJ-VAU"/>
+                <constraint firstItem="hwI-UX-sYg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xgm-e4-VmG"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

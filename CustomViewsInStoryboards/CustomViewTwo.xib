@@ -15,16 +15,27 @@
             <rect key="frame" x="0.0" y="0.0" width="128" height="240"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snowden" translatesAutoresizingMaskIntoConstraints="NO" id="8rT-s5-rXO">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UTj-7z-bZG">
                     <rect key="frame" x="0.0" y="0.0" width="128" height="240"/>
-                </imageView>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" image="snowden" translatesAutoresizingMaskIntoConstraints="NO" id="8rT-s5-rXO">
+                            <rect key="frame" x="0.0" y="0.0" width="128" height="220"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="I'm Ed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfF-P5-dr5">
+                            <rect key="frame" x="41" y="220" width="47" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="8rT-s5-rXO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9Sb-Ys-nyI"/>
-                <constraint firstAttribute="bottom" secondItem="8rT-s5-rXO" secondAttribute="bottom" id="EGv-Ub-onw"/>
-                <constraint firstAttribute="trailing" secondItem="8rT-s5-rXO" secondAttribute="trailing" id="MOF-DX-LkQ"/>
-                <constraint firstItem="8rT-s5-rXO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VSv-2R-XyD"/>
+                <constraint firstAttribute="trailing" secondItem="UTj-7z-bZG" secondAttribute="trailing" id="GXf-lk-pnZ"/>
+                <constraint firstItem="UTj-7z-bZG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OFz-sa-FOh"/>
+                <constraint firstAttribute="bottom" secondItem="UTj-7z-bZG" secondAttribute="bottom" id="P2O-E6-wA2"/>
+                <constraint firstItem="UTj-7z-bZG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VQO-Gf-vLH"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

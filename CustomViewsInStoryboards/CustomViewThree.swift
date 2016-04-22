@@ -11,7 +11,12 @@ import UIKit
 class CustomViewThree: UIView {
 
     override func awakeAfterUsingCoder(aDecoder: NSCoder) -> AnyObject? {
-        <#code#>
+        if self.subviews.count == 0 {
+            let customThree = loadNibNamed("CustomViewThree")
+            customThree.translatesAutoresizingMaskIntoConstraints = false
+            return customThree
+        }
+        return self;
     }
 
 }
