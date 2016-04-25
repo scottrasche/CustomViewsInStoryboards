@@ -7,6 +7,7 @@
 //
 
 #import "CustomViewTwo.h"
+#import "UIView+Extension.h"
 
 @interface CustomViewTwo()
 
@@ -26,9 +27,8 @@
         // you need to set the view's frame to match the parent's size before adding to the parent - or else a lot of constraint complaints
         self.view.frame = self.bounds;
         [self addSubview:self.view];
-        return self;
     }
-    return nil;
+    return self;
 }
 
 @end

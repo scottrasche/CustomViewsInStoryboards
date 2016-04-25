@@ -17,7 +17,7 @@
 - (instancetype)loadNibNamed:(NSString *)nibNameOrNil {
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     nibNameOrNil = nibNameOrNil ? : NSStringFromClass([self class]);
-    
+        
     return [bundle loadNibNamed:nibNameOrNil owner:nil options:nil].firstObject;
 }
 

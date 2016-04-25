@@ -27,9 +27,4 @@
     [self.customViewOneContainer addSubview:cv1];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 @end

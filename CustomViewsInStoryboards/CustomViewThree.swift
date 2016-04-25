@@ -8,15 +8,33 @@
 
 import UIKit
 
+@IBDesignable
 class CustomViewThree: UIView {
-
+    
     override func awakeAfterUsingCoder(aDecoder: NSCoder) -> AnyObject? {
+        //loadNibNamed will call initWithCoder - which will call this - etc.
+        //to avaoid infinite loop - check to see if view is loaded
         if self.subviews.count == 0 {
             let customThree = loadNibNamed("CustomViewThree")
-            customThree.translatesAutoresizingMaskIntoConstraints = false
+            customThree.translatesAutoresizingMaskIntoConstraints = self.translatesAutoresizingMaskIntoConstraints
             return customThree
         }
         return self;
     }
 
+    // Storyboard IB Designable calls initWithFrame - not used when running on
+    // device or simulator
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        if self.subviews.count == 0 {
+            let customThree = loadNibNamed("CustomViewThree")
+            customThree.frame = self.frame
+            customThree.translatesAutoresizingMaskIntoConstraints = self.translatesAutoresizingMaskIntoConstraints
+            self.addSubview(customThree)
+        }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
 }

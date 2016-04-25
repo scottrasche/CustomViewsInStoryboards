@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E1310461CCE7A2300055394 /* CustomViewThreeObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E1310451CCE7A2300055394 /* CustomViewThreeObjC.m */; };
 		9E64D2091CC975A9008EDF14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E64D2081CC975A9008EDF14 /* main.m */; };
 		9E64D20C1CC975A9008EDF14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E64D20B1CC975A9008EDF14 /* AppDelegate.m */; };
 		9E64D20F1CC975A9008EDF14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E64D20E1CC975A9008EDF14 /* ViewController.m */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E1310441CCE7A2300055394 /* CustomViewThreeObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewThreeObjC.h; sourceTree = "<group>"; };
+		9E1310451CCE7A2300055394 /* CustomViewThreeObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewThreeObjC.m; sourceTree = "<group>"; };
 		9E64D2041CC975A9008EDF14 /* CustomViewsInStoryboards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomViewsInStoryboards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E64D2081CC975A9008EDF14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9E64D20A1CC975A9008EDF14 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 				9E64D22F1CC97C81008EDF14 /* CustomViewThree.swift */,
 				9E64D2311CC97C8D008EDF14 /* CustomViewThree.xib */,
 				9E64D22E1CC97C80008EDF14 /* CustomViewsInStoryboards-Bridging-Header.h */,
+				9E1310441CCE7A2300055394 /* CustomViewThreeObjC.h */,
+				9E1310451CCE7A2300055394 /* CustomViewThreeObjC.m */,
 			);
 			name = "Example 3";
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 				9E64D20F1CC975A9008EDF14 /* ViewController.m in Sources */,
 				9E64D20C1CC975A9008EDF14 /* AppDelegate.m in Sources */,
 				9E64D2231CC9781E008EDF14 /* CustomViewOne.m in Sources */,
+				9E1310461CCE7A2300055394 /* CustomViewThreeObjC.m in Sources */,
 				9E64D22B1CC97B68008EDF14 /* CustomViewTwo.m in Sources */,
 				9E64D2301CC97C81008EDF14 /* CustomViewThree.swift in Sources */,
 				9E64D2091CC975A9008EDF14 /* main.m in Sources */,
@@ -367,6 +373,7 @@
 				9E64D21D1CC975A9008EDF14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
