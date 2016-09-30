@@ -168,6 +168,7 @@
 				TargetAttributes = {
 					9E64D2031CC975A9008EDF14 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -338,6 +339,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CustomViewsInStoryboards/CustomViewsInStoryboards-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -351,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rasche.CustomViewsInStoryboards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CustomViewsInStoryboards/CustomViewsInStoryboards-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
