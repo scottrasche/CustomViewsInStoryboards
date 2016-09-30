@@ -11,12 +11,12 @@ import UIKit
 @IBDesignable
 class CustomViewThree: UIView {
     
-    override func awakeAfterUsingCoder(aDecoder: NSCoder) -> AnyObject? {
+    override func awakeAfter(using aDecoder: NSCoder) -> Any? {
         //loadNibNamed will call initWithCoder - which will call this - etc.
         //to avaoid infinite loop - check to see if view is loaded
         if self.subviews.count == 0 {
             let customThree = loadNibNamed("CustomViewThree")
-            customThree.translatesAutoresizingMaskIntoConstraints = self.translatesAutoresizingMaskIntoConstraints
+            customThree?.translatesAutoresizingMaskIntoConstraints = self.translatesAutoresizingMaskIntoConstraints
             return customThree
         }
         return self;
@@ -28,9 +28,9 @@ class CustomViewThree: UIView {
         super.init(frame: frame)
         if self.subviews.count == 0 {
             let customThree = loadNibNamed("CustomViewThree")
-            customThree.frame = self.frame
-            customThree.translatesAutoresizingMaskIntoConstraints = self.translatesAutoresizingMaskIntoConstraints
-            self.addSubview(customThree)
+            customThree?.frame = self.frame
+            customThree?.translatesAutoresizingMaskIntoConstraints = self.translatesAutoresizingMaskIntoConstraints
+            self.addSubview(customThree!)
         }
     }
     
